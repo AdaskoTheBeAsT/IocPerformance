@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Linq;
 using Castle.DynamicProxy;
-using ImTools;
+using Catel.Reflection;
+using DryIoc.ImTools;
 
 namespace DryIoc.Interception
 {
@@ -14,10 +15,10 @@ namespace DryIoc.Interception
             var serviceType = typeof(TService);
 
             Type proxyType;
-            if (serviceType.IsInterface())
+            if (serviceType.IsInterfaceEx())
                 proxyType = ProxyBuilder.CreateInterfaceProxyTypeWithTargetInterface(
                     serviceType, ArrayTools.Empty<Type>(), ProxyGenerationOptions.Default);
-            else if (serviceType.IsClass())
+            else if (serviceType.IsClassEx())
                 proxyType = ProxyBuilder.CreateClassProxyType(
                     serviceType, ArrayTools.Empty<Type>(), ProxyGenerationOptions.Default);
             else

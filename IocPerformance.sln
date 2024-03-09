@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29201.188
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IocPerformance", "IocPerformance\IocPerformance.csproj", "{C2CB4D53-6B69-4554-9DA6-759A69C528C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IocPerformance", "IocPerformance\IocPerformance.csproj", "{C2CB4D53-6B69-4554-9DA6-759A69C528C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IocPerformance.Test", "IocPerformance.Test\IocPerformance.Test.csproj", "{7C9F7453-18AB-41CB-83F9-CA3F52535898}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IocPerformance.Test", "IocPerformance.Test\IocPerformance.Test.csproj", "{7C9F7453-18AB-41CB-83F9-CA3F52535898}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
